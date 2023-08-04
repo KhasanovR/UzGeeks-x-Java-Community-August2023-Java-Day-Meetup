@@ -1,6 +1,6 @@
-package examples.join;
+package uz.geeks.java.priority;
 
-public class JoinThreadExample implements Runnable {
+public class PriorityThreadExample implements Runnable {
     //
     @Override
     public void run() {

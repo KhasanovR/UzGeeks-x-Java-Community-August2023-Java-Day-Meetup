@@ -1,4 +1,4 @@
-package examples.synchronization;
+package uz.geeks.java.synchronization;
 
 public class SynchronizedThreadExample implements Runnable {
     //

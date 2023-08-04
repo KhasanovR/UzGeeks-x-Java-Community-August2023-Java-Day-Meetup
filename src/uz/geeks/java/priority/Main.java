@@ -1,4 +1,4 @@
-package examples.priority;
+package uz.geeks.java.priority;
 
 public class Main {
     //

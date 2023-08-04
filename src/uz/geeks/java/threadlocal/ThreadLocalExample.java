@@ -1,4 +1,4 @@
-package examples.threadlocal;
+package uz.geeks.java.threadlocal;
 
 public class ThreadLocalExample {
     //

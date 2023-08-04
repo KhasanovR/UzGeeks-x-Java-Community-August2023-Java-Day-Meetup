@@ -1,4 +1,4 @@
-package examples.runnable;
+package uz.geeks.java.runnable;
 
 public class ThreadExample implements Runnable {
     //

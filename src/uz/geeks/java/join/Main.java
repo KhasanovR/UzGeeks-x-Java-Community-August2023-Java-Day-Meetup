@@ -1,4 +1,4 @@
-package examples.join;
+package uz.geeks.java.join;
 
 public class Main {
     //

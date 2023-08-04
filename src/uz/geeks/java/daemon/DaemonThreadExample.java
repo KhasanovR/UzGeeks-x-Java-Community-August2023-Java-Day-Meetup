@@ -1,4 +1,4 @@
-package examples.daemon;
+package uz.geeks.java.daemon;
 
 public class DaemonThreadExample {
     //

@@ -1,4 +1,4 @@
-package examples.deadlock;
+package uz.geeks.java.deadlock;
 
 public class DeadlockExample {
     //
