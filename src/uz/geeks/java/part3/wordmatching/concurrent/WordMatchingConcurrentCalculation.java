@@ -21,6 +21,7 @@ public class WordMatchingConcurrentCalculation {
         int step = size / numCores;
         int startIndex;
         int endIndex;
+
         List<Future<MatchData>> results = new ArrayList<>();
 
         for (int i = 0; i < numCores; i++) {

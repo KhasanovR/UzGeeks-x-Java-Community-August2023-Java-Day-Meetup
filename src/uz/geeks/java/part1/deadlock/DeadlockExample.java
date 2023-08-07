@@ -33,9 +33,9 @@ public class DeadlockExample {
                     e.printStackTrace();
                 }
                 System.out.println("Thread 2: Waiting for resource 1...");
-                synchronized (resource1) {
-                    System.out.println("Thread 2: Holding resource 1 and resource 2...");
-                }
+//                synchronized (resource1) {
+//                    System.out.println("Thread 2: Holding resource 1 and resource 2...");
+//                }
             }
         });
 

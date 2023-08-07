@@ -12,8 +12,9 @@ public class Example2 {
             try {
                 String name = Thread.currentThread().getName();
                 System.out.println("Hello " + name);
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
                 System.out.println("Bye " + name);
+                while (true);
             }
             catch (InterruptedException e) {
                 e.printStackTrace();

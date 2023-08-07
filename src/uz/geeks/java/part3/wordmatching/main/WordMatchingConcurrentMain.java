@@ -24,11 +24,7 @@ public class WordMatchingConcurrentMain {
 
             startTime = new Date();
 
-            String word = "zymosimeters";
-
-            if (args.length == 1) {
-                word = args[0];
-            }
+            String word = "bugun";
 
             MatchData result;
             result = WordMatchingConcurrentCalculation.getBestMatchingWords(word, dictionary);

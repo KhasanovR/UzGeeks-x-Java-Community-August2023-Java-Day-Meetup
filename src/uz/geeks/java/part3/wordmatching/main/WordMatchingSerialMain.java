@@ -23,12 +23,9 @@ public class WordMatchingSerialMain {
         startTime = new Date();
         String word = "zymosimeters";
 
-        if (args.length == 1) {
-            word = args[0];
-        }
-
         MatchData result = BestMatchingSerialCalculation.getBestMatchingWords(word, dictionary);
         List<String> results = result.getWords();
+
         endTime = new Date();
         System.out.println("Word: " + word);
         System.out.println("Minimum distance: " + result.getDistance());

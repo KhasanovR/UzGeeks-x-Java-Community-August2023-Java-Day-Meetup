@@ -8,7 +8,7 @@ public class InvokeSample {
     //
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         //
-        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
 
         Callable<String> sleepingTaskA = () -> {
             TimeUnit.SECONDS.sleep(2);
@@ -28,13 +28,11 @@ public class InvokeSample {
         List<Callable<String>> tasks = Arrays.asList(sleepingTaskA, sleepingTaskB, sleepingTaskC);
         long startTime = System.nanoTime();
 
-        List<Future<String>> futures = executorService.invokeAll(tasks);
+        String futures = executorService.invokeAny(tasks);
         //String result = executorService
         double elapsedTime = (System.nanoTime() - startTime) / 1000000000.0;
         System.out.println(elapsedTime);
-        for (Future<String> future : futures) {
-            System.out.println(future.get());
-        }
+
 
         executorService.shutdown();
     }

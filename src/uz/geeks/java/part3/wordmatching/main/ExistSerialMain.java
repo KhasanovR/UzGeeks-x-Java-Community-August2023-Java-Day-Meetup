@@ -20,11 +20,7 @@ public class ExistSerialMain {
 
         startTime = new Date();
 
-        String word = "zymosimeters";
-
-        if (args.length == 1) {
-            word = args[0];
-        }
+        String word = "good";
 
         boolean result = ExistSerialCalculation.existWord(word, dictionary);
         endTime = new Date();
